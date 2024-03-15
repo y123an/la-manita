@@ -10,7 +10,9 @@ const Ventajas = () => {
   return (
     <div className="flex justify-center">
       <div className="flex flex-col items-center bg-[#ccccca] p-8 md:p-20 gap-8">
-        <h1 className="text-4xl">VEnTAJas</h1>
+        <h1 className="text-4xl">
+          VEn<span className="text-white">T</span>AJas
+        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16">
           <VentajaItem
             imgSrc={Artboard32}

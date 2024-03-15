@@ -36,7 +36,7 @@ export default function Navbar() {
           <FaShoppingCart />
         </Link>
       </div>
-      <div className="md:hidden bg-[#ccccca] mr-9 p-3 flex justify-center items-center">
+      <div className="md:hidden bg-[#ccccca]  p-3 flex justify-center items-center">
         {isMenuOpen && (
           <div className="md:hidden absolute z-30 top-[60px]  left-0 right-0 bg-[#333] py-4 px-2">
             <div className="flex flex-col space-y-2">
