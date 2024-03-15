@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <div className="w-full h-[70px] flex justify-between md:justify-center  md:mx-auto">
-      <div className="md:w-[55%] w-full h-[auto] flex justify-start items-center bg-gray-300 ps-12">
+      <div className="md:w-[55%] w-full h-[auto] flex justify-start items-center bg-[#ccccca] ps-12">
         <img src={logo} className="w-[150px] h-auto" alt="logo" />
       </div>
       <div className="hidden md:flex justify-between items-center gap-1 bg-[#333] w-[45%] h-auto px-12 text-white">
@@ -36,7 +36,7 @@ export default function Navbar() {
           <FaShoppingCart />
         </Link>
       </div>
-      <div className="md:hidden bg-gray-300 mr-9 p-3 flex justify-center items-center">
+      <div className="md:hidden bg-[#ccccca] mr-9 p-3 flex justify-center items-center">
         {isMenuOpen && (
           <div className="md:hidden absolute z-30 top-[60px]  left-0 right-0 bg-[#333] py-4 px-2">
             <div className="flex flex-col space-y-2">
