@@ -13,7 +13,7 @@ const HeroSection = () => {
           <img
             src={leftHorse}
             alt=""
-            className="absolute w-7/12 top-1/2 transform -translate-y-1/2 left-0 md:left-[200px]"
+            className="absolute w-7/12 brightness-200 top-1/2 transform -translate-y-1/2 left-0 md:left-[200px]"
           />
           <div className="flex flex-col md:pt-[200px] items-center p-8 md:p-16">
             <h2 className="uppercase text-white text-3xl md:text-5xl z-10 bg-[#f4cec9] py-2 px-4">
