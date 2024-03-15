@@ -9,12 +9,14 @@ const HeroSection = () => {
     <div className="w-full">
       <Navbar />
       <div className="flex flex-col h-[100vh] md:flex-row">
-        <div className="w-full md:w-[55%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative">
-          <img
-            src={leftHorse}
-            alt=""
-            className="absolute w-7/12 brightness-200 top-1/2 transform -translate-y-1/2 left-0 md:left-[200px]"
-          />
+        <div
+          style={{
+            backgroundImage: `url(${leftHorse})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+          }}
+          className="w-full md:w-[55%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative"
+        >
           <div className="flex flex-col md:pt-[200px] items-center p-8 md:p-16">
             <h2 className="uppercase text-white text-3xl md:text-5xl z-10 bg-[#f4cec9] py-2 px-4">
               Ma<span className="text-black">cro</span>
@@ -26,12 +28,15 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <div className="w-full md:w-[45%] bg-[#323232] bg-cover bg-center relative">
-          <img
-            src={rightHorse}
-            alt=""
-            className="absolute top-[330px] md:w-7/12 transform -translate-y-1/2 w-7/12 right-0 md:top-[580px] "
-          />
+        <div
+          style={{
+            backgroundImage: `url(${rightHorse})`,
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "contain",
+            backgroundPositionY: "bottom",
+          }}
+          className="w-full md:w-[45%] bg-[#323232] bg-cover bg-center relative"
+        >
           <div className="flex flex-col justify-center  items-center p-8 md:p-16">
             <img
               src={micro}
