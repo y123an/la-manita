@@ -13,10 +13,10 @@ export default function Navbar() {
 
   return (
     <div className="w-full h-[100px] flex justify-between md:justify-center  md:mx-auto">
-      <div className="md:w-[55%] w-full h-[auto] flex justify-start items-center ps-12  md:ps-[200px] bg-[#ccccca] ">
+      <div className="md:w-[50%] w-full h-[auto] flex justify-start items-center ps-12   bg-[#ccccca] ">
         <img src={logo} className="w-[200px]  h-auto" alt="logo" />
       </div>
-      <div className="hidden md:flex justify-between items-center gap-1 bg-[#333] w-[45%] h-auto px-12 text-white">
+      <div className="hidden md:flex justify-between items-center gap-1 bg-[#333] w-[50%] h-auto px-12 text-white">
         <Link to="/home" className="">
           Home
         </Link>

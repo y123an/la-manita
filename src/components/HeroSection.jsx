@@ -15,7 +15,7 @@ const HeroSection = () => {
             backgroundRepeat: "no-repeat",
             backgroundSize: "contain",
           }}
-          className="w-full md:w-[55%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative"
+          className="w-full md:w-[50%] bg-[#ccccca] bg-cover bg-center bg-no-repeat relative"
         >
           <div className="flex flex-col md:pt-[200px] items-center p-8 md:p-16">
             <h2 className="uppercase text-white text-3xl md:text-5xl z-10 bg-[#f4cec9] py-2 px-4">
@@ -35,7 +35,7 @@ const HeroSection = () => {
             backgroundSize: "contain",
             backgroundPositionY: "bottom",
           }}
-          className="w-full md:w-[45%] bg-[#323232] bg-cover bg-center relative"
+          className="w-full md:w-[50%] bg-[#323232] bg-cover bg-center relative"
         >
           <div className="flex flex-col justify-center  items-center p-8 md:p-16">
             <img
