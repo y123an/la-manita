@@ -9,93 +9,36 @@ import panamaFlag from "../assets/landing-page/panama.svg";
 
 export default function LandingPage() {
   return (
-    <div className="flex  flex-col bg-transparent">
-      <div className="flex flex-col justify-center items-center h-[100vh] bg-[#999] px-12">
-        <img src={logo} className="w-[50%] h-auto" alt="logo" />
-        <h1 className="text-[3rem] tracking-widest uppercase text-white">
-          Seleccione un pais
+    <div className="flex flex-col bg-transparent">
+      <div className="flex flex-col justify-center items-center h-screen bg-[#999] px-6 md:px-12">
+        <img src={logo} className="w-3/4 md:w-1/2 h-auto" alt="logo" />
+        <h1 className="text-3xl md:text-5xl tracking-widest uppercase text-white mt-4 md:mt-8">
+          Seleccione un país
         </h1>
-        <div className="flex justify-center items-center my-8 mx-0 px-0 w-[70%]">
-          <div className="flex flex-col justify-center items-center">
-            <Link
-              to="/home"
-              className="flex flex-col justify-center items-center"
-            >
-              <img
-                className="cursor-pointer w-[40%] h-auto"
-                src={mexicoFlag}
-                alt="mexico flag"
-              />
-              <p className="uppercase bg-red-100 mt-4">colombia</p>
-            </Link>
-          </div>
-          <div className="flex flex-col justify-center items-center">
-            <Link
-              to="/home"
-              className="flex flex-col justify-center items-center"
-            >
-              <img
-                className="cursor-pointer w-[40%] h-auto"
-                src={colombiaFlag}
-                alt="colombia flag"
-              />
-              <p className="uppercase bg-red-100 mt-4">colombia</p>
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/home"
-              className="flex flex-col justify-center items-center"
-            >
-              <img
-                className="cursor-pointer w-[40%] h-auto"
-                src={costaricaFlag}
-                alt="costa rica flag"
-              />
-              <p className="uppercase bg-red-100 mt-4">costa rica</p>
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/home"
-              className="flex flex-col justify-center items-center"
-            >
-              <img
-                className="cursor-pointer w-[40%] h-auto"
-                src={venezuelaFlag}
-                alt="venezuela flag"
-              />
-              <p className="uppercase bg-red-100 mt-4">venezuela</p>
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/home"
-              className="flex flex-col justify-center items-center"
-            >
-              <img
-                className="cursor-pointer w-[40%] h-auto"
-                src={argentinaFlag}
-                alt="argentina flag"
-              />
-              <p className="uppercase bg-red-100 mt-4">argentina</p>
-            </Link>
-          </div>
-          <div>
-            <Link
-              to="/home"
-              className="flex flex-col justify-center items-center"
-            >
-              <img
-                className="cursor-pointer w-[40%] h-auto"
-                src={panamaFlag}
-                alt="panama flag"
-              />
-              <p className="uppercase bg-red-100 mt-4">panama</p>
-            </Link>
-          </div>
+        <div className="flex flex-wrap justify-center items-center my-8 w-full">
+          <CountryLink flag={mexicoFlag} name="México" />
+          <CountryLink flag={colombiaFlag} name="Colombia" />
+          <CountryLink flag={costaricaFlag} name="Costa Rica" />
+          <CountryLink flag={venezuelaFlag} name="Venezuela" />
+          <CountryLink flag={argentinaFlag} name="Argentina" />
+          <CountryLink flag={panamaFlag} name="Panamá" />
         </div>
       </div>
     </div>
   );
 }
+
+const CountryLink = ({ flag, name }) => (
+  <div className="flex flex-col justify-center items-center w-1/2 sm:w-1/3 md:w-1/6 p-4">
+    <Link to="/home" className="flex flex-col justify-center items-center">
+      <img
+        className="cursor-pointer w-2/3 h-auto"
+        src={flag}
+        alt={`${name} flag`}
+      />
+      <p className="uppercase bg-red-500 mt-4 py-1 px-2 text-white text-sm">
+        {name}
+      </p>
+    </Link>
+  </div>
+);
