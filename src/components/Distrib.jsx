@@ -5,11 +5,11 @@ import product1 from "../assets/hero-section/micro-product.webp";
 
 const Distrib = () => {
   return (
-    <div className="flex flex-col gap-10">
-      <div className="flex justify-between">
+    <div className="flex flex-col gap-10 py-6">
+      <div className="flex justify-between overflow-hidden">
         <img src={rock} alt="" className="w-[300px]" />
         <img src={women} alt="" className="w-[700px]" />
-        <img src={rock} alt="" className="w-[300px] rotate-180" />
+        <img src={rock} alt="" className="w-[300px] rotate-180 -mr-[100px]" />
       </div>
       <div className="flex justify-center flex-col items-center gap-10">
         <h1 className="text-4xl md:text-5xl">
