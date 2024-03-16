@@ -27,12 +27,12 @@ const Dudas = () => {
   }, []);
 
   return (
-    <div className="flex flex-col justify-center items-center gap-4 p-4 md:p-20">
+    <div className="flex flex-col justify-center items-center gap-4  md:pt-20">
       <div>
         <h1 className="text-4xl text-center">LAS EXPERIENCIAS QUE SE PRO-</h1>
       </div>
-      <div className="flex flex-col md:flex-row gap-4">
-        <div className="relative flex flex-col gap-4 md:gap-10 w-full md:w-[400px] h-[300px] bg-[#CCCCCA] flex justify-center items-center">
+      <div className="flex flex-col md:flex-row ">
+        <div className="relative  flex-col gap-4 md:gap-10 w-full  h-[300px] bg-[#CCCCCA] flex justify-center items-center">
           <p className="text-center">MACRO</p>
           <div className="text-center">
             <h2 className="text-3xl">{quotes[currentQuoteIndex]}</h2>
@@ -48,7 +48,7 @@ const Dudas = () => {
             ))}
           </div>
         </div>
-        <div className="relative flex flex-col gap-4 md:gap-10 w-full md:w-[400px] h-[300px] bg-[#323232] text-white flex justify-center items-center">
+        <div className="relative  flex-col gap-4 md:gap-10 w-full h-[300px] bg-[#323232] text-white flex justify-center items-center">
           <p className="text-center">MICRO</p>
           <div className="text-center">
             <h2 className="text-3xl">{quotes2[currentQuoteIndex]}</h2>
@@ -65,14 +65,12 @@ const Dudas = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-4">
-        <h2 className="text-4xl text-center">
+      <div className="flex w-full flex-col justify-center items-center gap-4">
+        <h2 className="text-[50px] text-center">
           DU<span className="text-gray-300">D</span>AS?
         </h2>
-        <p className="bg-black p-2 text-white text-center max-w-[100px]">
-          INFORME
-        </p>
-        <p className="bg-black p-2 text-white text-center">
+        <p className=" p-2  text-center">INFORME</p>
+        <p className="bg-black p-2 text-white text-center w-full">
           ENVÍO GRATIS - ORDEN MÍNIMA DE $2,000 - OFRECEMOS TODOS LOS MÉTODOS DE
         </p>
         <h2 className="text-4xl text-center">
@@ -82,7 +80,7 @@ const Dudas = () => {
         <p className="bg-black p-2 text-white text-center max-w-[100px]">
           ÚNASE
         </p>
-        <p className="bg-black p-2 text-white text-center">
+        <p className="bg-black p-2 w-full text-white text-center">
           CONTACTE +52 55 2799 ABRIR WHATSAPP
         </p>
       </div>
