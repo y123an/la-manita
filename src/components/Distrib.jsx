@@ -20,9 +20,9 @@ const Distrib = () => {
           <span className="text-gray-300">MI</span>CRO
         </h1>
         <div className="flex flex-col md:flex-row justify-center gap-10">
-          <div className="w-full md:w-1/2">
+          <div className="w-full md:w-1/2 ">
             <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-              <div className="h-[180px] overflow-hidden">
+              <div className="h-[200px] overflow-hidden">
                 <img src={product1} alt="" />
               </div>
               <p className="text-4xl">CHAI VAINIL-</p>
@@ -36,7 +36,7 @@ const Distrib = () => {
           </div>
           <div className="w-full md:w-1/2">
             <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-              <div className="h-[180px] overflow-hidden">
+              <div className="h-[200px] overflow-hidden">
                 <img src={product1} alt="" />
               </div>
               <p className="text-4xl">
