@@ -4,6 +4,7 @@ import Descargas from "../components/Descargas";
 import Perguntas from "../components/Perguntas";
 import Pasos from "../components/Pasos";
 import Ilustraciones from "../components/Ilustraciones";
+import Expricance from "../components/Expricance";
 
 const Gallery = () => {
   return (
@@ -13,6 +14,7 @@ const Gallery = () => {
       <Perguntas />
       <Pasos />
       <Ilustraciones />
+      <Expricance />
     </div>
   );
 };

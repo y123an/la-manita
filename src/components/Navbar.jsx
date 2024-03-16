@@ -34,7 +34,9 @@ export default function Navbar() {
         <Link className="">Ventajas</Link>
         <Link className="">Productos</Link>
         <Link className="">Distribuidores</Link>
-        <Link className="">Dudas y Descargas</Link>
+        <Link to={"/gallery"} className="">
+          Dudas y Descargas
+        </Link>
         <Link className="text-white flex items-center">
           <FaShoppingCart />
           <div className="bg-red-500 px-2 rounded-full">{totalQuantity}</div>
@@ -51,7 +53,9 @@ export default function Navbar() {
               <Link className="text-white">Ventajas</Link>
               <Link className="text-white">Productos</Link>
               <Link className="text-white">Distribuidores</Link>
-              <Link className="text-white">Dudas y Descargas</Link>
+              <Link to={"/gallery"} className="text-white">
+                Dudas y Descargas
+              </Link>
               <Link className="text-white flex">
                 <div className="bg-red-500 w-3 h-5 ">{cart.length}</div>
                 <FaShoppingCart />

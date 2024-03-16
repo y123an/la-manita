@@ -59,17 +59,6 @@ const Ilustraciones = () => {
           ))}
         </div>
       </div>
-      <div className="flex bg-[#f9f9f6] flex-col justify-center items-center gap-5">
-        <h2 className="text-4xl md:text-6xl text-center">
-          DIS<span className="text-gray-300">TRI</span>BUI
-          <span className="text-gray-300">DOR</span>?
-        </h2>
-        <p className="text-lg md:text-xl p-2 text-center max-w-md">ÚNASE</p>
-        <p className="bg-black flex items-center justify-center gap-2 md:gap-5 text-lg md:text-xl p-2 w-full text-white text-center">
-          CONTACTE +52 55 2799 ABRIR WHATSAPP
-          <FaWhatsapp size={30} />
-        </p>
-      </div>
     </div>
   );
 };
