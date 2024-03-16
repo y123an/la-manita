@@ -6,17 +6,21 @@ import product1 from "../assets/hero-section/micro-product.webp";
 const Distrib = () => {
   return (
     <div className="flex flex-col gap-10 py-6">
-      <div className="flex justify-between overflow-hidden">
-        <img src={rock} alt="" className="w-[300px]" />
-        <img src={women} alt="" className="w-[700px]" />
-        <img src={rock} alt="" className="w-[300px] rotate-180 -mr-[100px]" />
+      <div className="hidden md:flex  justify-between overflow-hidden">
+        <img src={rock} alt="" className="w-full md:w-1/4 lg:w-1/5 xl:w-1/6" />
+        <img src={women} alt="" className="w-full md:w-1/2 lg:w-2/3" />
+        <img
+          src={rock}
+          alt=""
+          className="w-full md:w-1/4 lg:w-1/5 xl:w-1/6 rotate-180 -mr-[100px]"
+        />
       </div>
       <div className="flex justify-center flex-col items-center gap-10">
         <h1 className="text-4xl md:text-5xl">
           <span className="text-gray-300">MI</span>CRO
         </h1>
         <div className="flex flex-col md:flex-row justify-center gap-10">
-          <div className="w-full  md:w-[45%]">
+          <div className="w-full md:w-1/2">
             <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
               <div className="h-[180px] overflow-hidden">
                 <img src={product1} alt="" />
@@ -30,7 +34,7 @@ const Distrib = () => {
               <p>AÑADIDO. ACTUALIZAR CANTIDAD DESDE EL CARRITO</p>
             </div>
           </div>
-          <div className="w-full  md:w-[45%]">
+          <div className="w-full md:w-1/2">
             <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
               <div className="h-[180px] overflow-hidden">
                 <img src={product1} alt="" />
