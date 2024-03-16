@@ -9,8 +9,8 @@ import panamaFlag from "../assets/landing-page/panama.svg";
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col bg-transparent">
-      <div className="flex flex-col justify-center items-center w-[75%]] h-[80vh] bg-[#999] px-12">
+    <div className="flex  flex-col bg-transparent">
+      <div className="flex flex-col justify-center items-center h-[100vh] bg-[#999] px-12">
         <img src={logo} className="w-[50%] h-auto" alt="logo" />
         <h1 className="text-[3rem] tracking-widest uppercase text-white">
           Seleccione un pais
