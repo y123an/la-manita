@@ -1,4 +1,3 @@
-import React from "react";
 import women from "../assets/Ventajas/women.svg";
 import rock from "../assets/Ventajas/rock.svg";
 import product1 from "../assets/hero-section/micro-product.webp";
@@ -8,8 +7,78 @@ import zblack from "../assets/products/zblack.png";
 import zgold from "../assets/products/zgold.png";
 import zwine from "../assets/products/zwine.png";
 import zyellowblack from "../assets/products/zyellowblack.png";
+import ProductCard from "./ProductCard";
 
 const Distrib = () => {
+  const products = [
+    {
+      id: 1,
+      img: product1,
+      title: "CHAI VAINIL-",
+      detail: "Caja de 30 sobres con 0.33g (10g)",
+      btnText: "AÑADIDO. ACTUALIZAR CANTIDAD DESDE EL CARRITO",
+      price: "1,250",
+    },
+
+    {
+      id: 2,
+      img: coca,
+      title: "CACAO DORADO",
+      detail: "Caja de 30 sobres con 0.33g (10g) por sobre",
+      btnText: "AÑADIR",
+      price: "1,250",
+    },
+
+    {
+      id: 3,
+      img: zpurple,
+      title: "ROL DE CANELA",
+      detail:
+        "1.25g de Psilocibe Cubensis por sobre (1 sobre Macro = 4-6 horas con visuales)",
+      btnText: "AÑADIR",
+      price: "200",
+    },
+
+    {
+      id: 4,
+      img: zblack,
+      title: "CHOCOLATE BLANCO",
+      detail:
+        "1.25g de Psilocibe Cubensis por sobre (2 sobres Macro = 6-8 horas del mejor viaje de tu vida. ¡Prepárate!)",
+      btnText: "AÑADIR",
+      price: "200",
+    },
+
+    {
+      id: 5,
+      img: zwine,
+      title: "CARAMELO",
+      detail:
+        "1.25g de Psilocibe Cubensis por sobre (Vacía el polvo en un café o te tibio y tómalo de un trago)",
+      btnText: "AÑADIR",
+      price: "200",
+    },
+
+    {
+      id: 6,
+      img: zgold,
+      title: "PAY DE LIMÓN",
+      detail:
+        "1.25g de Psilocibe Cubensis por sobre (Texas Yellow Cap, Z-Strain y Storm Troopers en cada formulación)",
+      btnText: "AÑADIR",
+      price: "200",
+    },
+    {
+      id: 7,
+      img: zyellowblack,
+      title: "CACAO DORADO (KETO VEGANO)",
+      detail:
+        "1.25g de Psilocibe Cubensis por sobre (Sin calorias. ¡Viaja sin afectar la dieta!)",
+      btnText: "AÑADIR",
+      price: "200",
+    },
+  ];
+
   return (
     <div className="flex flex-col gap-10 py-6">
       <div className="hidden md:flex  justify-between overflow-hidden">
@@ -26,131 +95,31 @@ const Distrib = () => {
           <span className="text-gray-300">MI</span>CRO
         </h1>
         <div className="flex flex-col md:flex-row justify-center gap-10">
-          <div className="w-full md:w-1/2 ">
-            <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-              <div className="h-[200px] overflow-hidden">
-                <img src={product1} alt="" />
-              </div>
-              <p className="text-4xl">CHAI VAINIL-</p>
-              <p className="text-xl">Caja de 30 sobres con 0.33g (10g)</p>
-              <p className="">por sobre</p>
-            </div>
-            <div className="bg-[#323232] text-white flex justify-center flex-col items-center gap-5 p-4">
-              <p> $1,250</p>
-              <p>AÑADIDO. ACTUALIZAR CANTIDAD DESDE EL CARRITO</p>
-            </div>
-          </div>
-          <div className="w-full md:w-1/2">
-            <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-              <div className="h-[200px] overflow-hidden">
-                <img src={coca} alt="" className="w-[500px]" />
-              </div>
-              <p className="text-4xl">
-                CACAO DORADO
-                <br /> (KETO VEGANO)
-              </p>
-              <p className="text-xl">
-                Caja de 30 sobres con 0.33g (10g) por sobre
-              </p>
-            </div>
-            <div className="bg-[#323232] text-white flex justify-center flex-col items-center gap-5 p-4">
-              <p> $1,250</p>
-              <p>AÑADIR</p>
-            </div>
-          </div>
+          {products.slice(0, 1).map((product, index) => (
+            <ProductCard
+              key={index}
+              id={product.id}
+              img={product.img}
+              title={product.title}
+              detail={product.detail}
+              btnText={product.btnText}
+              price={product.price}
+            />
+          ))}
         </div>
       </div>
       <div className="flex flex-col items-center gap-10 justify-center">
-        <div className="w-full md:w-1/2 ">
-          <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-            <div className="h-[200px] overflow-hidden">
-              <img src={zpurple} alt="" className="w-[700px]" />
-            </div>
-            <p className="text-4xl">ROL DE CANELA</p>
-            <p className="text-xl">
-              1.25g de Psilocibe Cubensis por sobre
-              <br />
-              (1 sobre Macro = 4-6 horas con visuales)
-            </p>
-            <p className="">por sobre</p>
-          </div>
-          <div className="bg-[#323232] text-white flex justify-center flex-col items-center gap-5 p-4">
-            <p>$200</p>
-            <p>AÑADIR</p>
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 ">
-          <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-            <div className="h-[200px] overflow-hidden">
-              <img src={zblack} alt="" className="w-[700px]" />
-            </div>
-            <p className="text-4xl">CHOCOLATE BLANCO</p>
-            <p className="text-xl">
-              1.25g de Psilocibe Cubensis por sobre
-              <br />
-              (2 sobres Macro = 6-8 horas del mejor viaje de tu vida.
-              ¡Prepárate!)
-            </p>
-            <p className="">por sobre</p>
-          </div>
-          <div className="bg-[#323232] text-white flex justify-center flex-col items-center gap-5 p-4">
-            <p>$200</p>
-            <p>AÑADIR</p>
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 ">
-          <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-            <div className="h-[200px] overflow-hidden">
-              <img src={zwine} alt="" className="w-[700px]" />
-            </div>
-            <p className="text-4xl">CARAMELO</p>
-            <p className="text-xl">
-              1.25g de Psilocibe Cubensis por sobre
-              <br /> (Vacía el polvo en un café o te tibio y tómalo de un trago)
-            </p>
-            <p className="">por sobre</p>
-          </div>
-          <div className="bg-[#323232] text-white flex justify-center flex-col items-center gap-5 p-4">
-            <p>$200</p>
-            <p>AÑADIR</p>
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 ">
-          <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-            <div className="h-[200px] overflow-hidden">
-              <img src={zgold} alt="" className="w-[700px]" />
-            </div>
-            <p className="text-4xl">PAY DE LIMÓN</p>
-            <p className="text-xl">
-              1.25g de Psilocibe Cubensis por sobre
-              <br />
-              (Texas Yellow Cap, Z-Strain y Storm Troopers en cada formulación)
-            </p>
-            <p className="">por sobre</p>
-          </div>
-          <div className="bg-[#323232] text-white flex justify-center flex-col items-center gap-5 p-4">
-            <p>$200</p>
-            <p>AÑADIR</p>
-          </div>
-        </div>
-        <div className="w-full md:w-1/2 ">
-          <div className="flex gap-5 flex-col p-10 justify-center items-center bg-[#CCCCCA]">
-            <div className="h-[200px] overflow-hidden">
-              <img src={zyellowblack} alt="" className="w-[700px]" />
-            </div>
-            <p className="text-4xl">CACAO DORADO (KETO VEGANO)</p>
-            <p className="text-xl">
-              1.25g de Psilocibe Cubensis por sobre
-              <br />
-              (Sin calorias. ¡Viaja sin afectar la dieta!)
-            </p>
-            <p className="">por sobre</p>
-          </div>
-          <div className="bg-[#323232] text-white flex justify-center flex-col items-center gap-5 p-4">
-            <p>$200</p>
-            <p>AÑADIR</p>
-          </div>
-        </div>
+        {products.slice(2, products.length - 1).map((product, index) => (
+          <ProductCard
+            key={index}
+            id={product.id}
+            img={product.img}
+            title={product.title}
+            detail={product.detail}
+            btnText={product.btnText}
+            price={product.price}
+          />
+        ))}
       </div>
     </div>
   );
