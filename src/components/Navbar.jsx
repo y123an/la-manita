@@ -12,27 +12,23 @@ export default function Navbar() {
   };
 
   return (
-    <div className="w-full h-[70px] flex justify-between md:justify-center  md:mx-auto">
-      <div className="md:w-[55%] w-full h-[auto] flex justify-start items-center bg-[#ccccca] ps-12">
-        <img src={logo} className="w-[150px] h-auto" alt="logo" />
+    <div className="w-full h-[100px] flex justify-between md:justify-center  md:mx-auto">
+      <div className="md:w-[55%] w-full h-[auto] flex justify-start items-center ps-12  md:ps-[200px] bg-[#ccccca] ">
+        <img src={logo} className="w-[200px]  h-auto" alt="logo" />
       </div>
       <div className="hidden md:flex justify-between items-center gap-1 bg-[#333] w-[45%] h-auto px-12 text-white">
-        <Link to="/acerca" className="">
-          Acerca de
+        <Link to="/home" className="">
+          Home
         </Link>
-        <Link to="/ventajas" className="">
-          Ventajas
+        <Link to="/gallery" className="">
+          Gallery
         </Link>
-        <Link to="/product" className="">
-          Productos
-        </Link>
-        <Link to="/distribuidores" className="">
-          Distribuidores
-        </Link>
-        <Link to="/dudas" className="">
-          Dudas y Descargas
-        </Link>
-        <Link to="/shop" className="">
+        <Link className="">Acerca de</Link>
+        <Link className="">Ventajas</Link>
+        <Link className="">Productos</Link>
+        <Link className="">Distribuidores</Link>
+        <Link className="">Dudas y Descargas</Link>
+        <Link className="">
           <FaShoppingCart />
         </Link>
       </div>
@@ -40,6 +36,9 @@ export default function Navbar() {
         {isMenuOpen && (
           <div className="md:hidden absolute z-30 top-[60px]  left-0 right-0 bg-[#333] py-4 px-2">
             <div className="flex flex-col space-y-2">
+              <Link to={"gallery"} className="text-white">
+                Gallery
+              </Link>
               <Link className="text-white">Acerca de</Link>
               <Link className="text-white">Ventajas</Link>
               <Link className="text-white">Productos</Link>
